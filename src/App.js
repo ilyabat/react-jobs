@@ -3,6 +3,7 @@ import React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Jobs from "./components/Jobs";
+import OpenJob from "./components/OpenJob";
 
 
 
@@ -32,23 +33,25 @@ function App() {
 
 
   console.log(jobs);
-
   return (
     <div className="wrapper">
       <BrowserRouter>
         <Routes>
 
-          <Route path="/" element={
-            <div className="main">
-              <div class="main__container _container">
-
-                <Jobs jobs={jobs} />
-
+          <Route path="/">
+            <Route index element={
+              <div div className="main">
+                <div className="main__container _container">
+                  <Jobs jobs={jobs} />
+                </div>
               </div>
-            </div>
-          } />
+            } />
+            <Route path=":id" element={<OpenJob job = {jobs}/>} />
+          </Route>
 
-          
+
+
+
         </Routes>
       </BrowserRouter>
 

@@ -44,6 +44,7 @@ h1 {
 .wrapper {
   box-sizing: border-box;
   background: #E6E9F2;
+  min-height: 100%;
 }
 
 ._container {
@@ -124,7 +125,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 90px;
-    
+
   }
 
   &__rating {
@@ -140,4 +141,237 @@ h1 {
     width: 16px;
     height: 18px;
   }
+}
+
+
+// open-job
+
+.open-job {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left-block {
+    width: 700px;
+  }
+
+  &__header {
+    display: flex;
+    border-bottom: 1px #3a45626e solid;
+    justify-content: space-between;
+  }
+
+  &__header-right {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__header-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.413333px;
+    color: #3A4562;
+    margin: 0 0 10px 0;
+  }
+
+  &__header-save {
+    letter-spacing: -0.5625px;
+    color: #3A4562;
+    font-stretch: 100;
+
+    img {
+      margin: 0 15px 0 0;
+    }
+  }
+
+  &__header-share {
+    letter-spacing: -0.5625px;
+    color: #3A4562;
+    font-stretch: 100;
+    margin: 0 0 0 24px;
+
+    img {
+      margin: 0 15px 0 0;
+    }
+  }
+
+  &__main {}
+
+  &__main-button {
+    margin: 53px 0 0 0;
+    background: #384564;
+    border-radius: 8px;
+    padding: 18px 30px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__main-upper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__main-title {
+    margin: 36px 0 0 0;
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.75px;
+    color: #3A4562;
+  }
+
+  &__main-brutto {
+    margin: 36px 0 0 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.625px;
+    color: #3A4562;
+  }
+
+  &__main-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5625px;
+    color: #3A4562;
+  }
+
+  &__main-post {
+    margin: 7px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5625px;
+    color: rgba(56, 65, 93, 0.355988);
+  }
+
+  &__main-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5625px;
+    color: #3A4562;
+    margin: 0 0 20px 0;
+  }
+
+  &__main-respons {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.625px;
+    color: #3A4562;
+    margin: 0 0 10px 0;
+  }
+
+  &__main-benefits {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.625px;
+    color: #3A4562;
+    margin: 20px 0 10px 0;
+  }
+
+  &__info-type {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__info-title {
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.413333px;
+    margin: 86px 0 9px 0;
+    color: #3A4562;
+    border-bottom: 1px #3a45628a solid;
+  }
+
+  &__info-text {
+    margin: 15px 0 10px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5625px;
+    color: #3A4562;
+  }
+
+  &__info-benefits {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__info-images {
+    display: flex;
+    column-gap: 10px;
+
+  }
+
+  &__map {
+    width: 402px;
+    height: 408px;
+    background: #2A3047;
+    border-radius: 8px;
+  }
+
+
+}
+
+.images {
+  width: 209px;
+  height: 115px;
+  border-radius: 8px;
+}
+
+.benefits {
+  width: 222px;
+  padding: 17px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.457143px;
+  color: #988B49;
+  background: rgba(255, 207, 0, 0.15);
+  border: 1px solid #FFCF00;
+  border-radius: 8px;
+}
+
+.type {
+  width: 222px;
+  padding: 17px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.457143px;
+  color: #55699E;
+  background: rgba(161, 177, 219, 0.317343);
+  border: 1px solid rgba(85, 105, 158, 0.3);
+  border-radius: 8px;
+}
+
+.exit-button {
+  margin: 20px 0 0 0;
+  padding: 20px;
+  width: 213px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3A4562;
+  background: #3845645d;
+  border-radius: 8px;
 }
