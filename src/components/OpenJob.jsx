@@ -6,8 +6,6 @@ import { NavLink, useParams } from 'react-router-dom';
 
 function OpenJob({ job }) {
 
-
-
   const params = useParams();
   const jobId = params.id;
   job = job.find(j => j.id == jobId);
@@ -29,7 +27,7 @@ function OpenJob({ job }) {
 
             </div>
             <div className='open-job__main'>
-              <button className='open-job__main-button'>Apply now</button>
+              <button className='open-job__main-button button_1'>Apply now</button>
               <div className='open-job__main-upper'>
                 <h2 className='open-job__main-title'>{job.title}</h2>
                 <div>

@@ -43,11 +43,12 @@ function App() {
             <Route index element={
               <div div className="main">
                 <div className="main__container _container">
-                  <Jobs jobs={jobs} />
+                
+                    <Jobs jobs={jobs} />
 
-                  <Pagination/>
+                    <Pagination />
+  
                 </div>
-
               </div>
             } />
             <Route path=":id" element={<OpenJob job={jobs} />} />
