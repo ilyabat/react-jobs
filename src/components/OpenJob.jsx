@@ -1,7 +1,12 @@
 import React from 'react'
 import { NavLink, useParams } from 'react-router-dom';
 
+
+
+
 function OpenJob({ job }) {
+
+
 
   const params = useParams();
   const jobId = params.id;
@@ -41,7 +46,7 @@ function OpenJob({ job }) {
 
               {
                 job.benefits.map(b => {
-                  return (<div className=''>{b}</div>);
+                  return (<div className='open-job__main-text'><img src="img/Bullet.png" alt="b" />{b}</div>);
                 })
               }
               <button className='open-job__main-button'>Apply now</button>
@@ -61,7 +66,7 @@ function OpenJob({ job }) {
               <div className='open-job__info-benefits'>
                 {
                   job.benefits.map(b => {
-                    return (<div className='benefits'>{b}</div>);
+                    return (<div className='benefits'>  {b}</div>);
                   })
                 }
               </div>
@@ -75,11 +80,17 @@ function OpenJob({ job }) {
                 }
               </div>
             </div>
-            <NavLink to={"/"}> <button className='exit-button'> RETURN TO JOB BOARD</button></NavLink>
+            <NavLink to={"/"}> <button className='exit-button'><img src="img/Arrow.svg" alt="arrow" /> RETURN TO JOB BOARD</button></NavLink>
           </div>
           <div className='open-job__map'>
-
+            <div className='open-job__map-up'>
+              <div className='open-job__map-name'>Department name: {job.name}</div>
+              <div className='open-job__map-addres'><img src="img/Location.svg" alt="location" />{job.address}</div>
+              <div className='open-job__map-phone'>{job.phone}</div>
+              <div className='open-job__map-email'>{job.email}</div>
+            </div>
           </div>
+
         </div>
       </div>
     );

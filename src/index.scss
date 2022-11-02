@@ -48,7 +48,7 @@ h1 {
 }
 
 ._container {
-  width: 1200px;
+  width: 1400px;
   padding: 26px 0;
   margin: 0 auto;
 }
@@ -57,10 +57,10 @@ h1 {
 // main page
 
 .main {
+
   &__block {
     display: flex;
     justify-content: space-between;
-
     padding: 24px 16px;
     width: 1400px;
     height: 164px;
@@ -141,6 +141,16 @@ h1 {
     width: 16px;
     height: 18px;
   }
+
+  &__until {}
+
+  &__numbers {
+    width: 515px;
+    height: 52px;
+    margin: 45px 0;
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
 }
 
 
@@ -150,7 +160,8 @@ h1 {
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 100px;
   }
 
   &__left-block {
@@ -179,16 +190,17 @@ h1 {
   }
 
   &__header-save {
+    cursor: pointer;
     letter-spacing: -0.5625px;
     color: #3A4562;
     font-stretch: 100;
-
     img {
       margin: 0 15px 0 0;
     }
   }
 
   &__header-share {
+    cursor: pointer;
     letter-spacing: -0.5625px;
     color: #3A4562;
     font-stretch: 100;
@@ -212,6 +224,12 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: #303b55;
+
+    }
   }
 
   &__main-upper {
@@ -244,6 +262,11 @@ h1 {
     line-height: 24px;
     letter-spacing: -0.5625px;
     color: #3A4562;
+
+    img {
+      align-items: center;
+      margin: 6px 5px 0 0;
+    }
   }
 
   &__main-post {
@@ -319,13 +342,44 @@ h1 {
   }
 
   &__map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 402px;
     height: 408px;
     background: #2A3047;
     border-radius: 8px;
   }
 
+  &__map-up {
+    color: #E7EAF0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5625px;
 
+  }
+
+  &__map-addres {
+    img {
+      margin: 0 5px 0 0;
+    }
+
+    margin: 8px 0;
+  }
+
+  &__map-email {
+    margin: 8px 0;
+  }
+
+  &__map-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.625px;
+  }
 }
 
 .images {
@@ -374,4 +428,65 @@ h1 {
   color: #3A4562;
   background: #3845645d;
   border-radius: 8px;
+
+  img {
+    margin: 0 19px 0 0;
+  }
+
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    background: #2c364e8f;
+  }
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0 20px 0;
+    background: #FFFFFF;
+    width: 515px;
+    height: 52px;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 10.4px;
+
+    column-gap: 20px;
+  }
+
+  &__separator {
+    color: #DEE3EF;
+    font-size: 35px;
+    margin: 0 40px;
+  }
+
+  &__number {
+    text-align: center;
+    width: 30px;
+    font-weight: 700;
+    font-size: 20.8px;
+    line-height: 25px;
+    letter-spacing: 1.73333px;
+    color: #70778B;
+    padding: 15px 0 12px 0;
+    cursor: pointer;
+
+    transition: 0.1ms all ease-in-out;
+
+    &:hover {
+      color: #5876C5;
+      border-bottom: 2.6px solid #5876C5;
+
+    }
+  }
+
+  &__current {
+    color: #5876C5;
+    border-bottom: 2.6px solid #5876C5;
+  }
 }

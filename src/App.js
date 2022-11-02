@@ -4,6 +4,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Jobs from "./components/Jobs";
 import OpenJob from "./components/OpenJob";
+import Pagination from "./components/Pagination";
 
 
 
@@ -43,10 +44,13 @@ function App() {
               <div div className="main">
                 <div className="main__container _container">
                   <Jobs jobs={jobs} />
+
+                  <Pagination/>
                 </div>
+
               </div>
             } />
-            <Route path=":id" element={<OpenJob job = {jobs}/>} />
+            <Route path=":id" element={<OpenJob job={jobs} />} />
           </Route>
 
 
