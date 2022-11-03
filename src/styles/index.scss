@@ -1,0 +1,223 @@
+@import '_reset.scss';
+@import '_mainPage.scss';
+@import '_openJob.scss';
+
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adelle_rgregular';
+  src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot');
+  src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix') format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/adelle_reg-webfont.woff') format('woff'),
+    url('https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf') format('truetype'),
+    url('https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+
+}
+
+._container {
+  box-sizing: border-box;
+  padding: 26px 0;
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_1 {
+  @media(max-width:1234px) {
+    display: none;
+  }
+}
+
+.images {
+  width: 209px;
+  height: 115px;
+  border-radius: 8px;
+}
+
+.benefits {
+  width: 222px;
+  padding: 17px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.457143px;
+  color: #988B49;
+  background: rgba(255, 207, 0, 0.15);
+  border: 1px solid #FFCF00;
+  border-radius: 8px;
+}
+
+.type {
+  width: 222px;
+  padding: 17px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.457143px;
+  color: #55699E;
+  background: rgba(161, 177, 219, 0.317343);
+  border: 1px solid rgba(85, 105, 158, 0.3);
+  border-radius: 8px;
+}
+
+.exit-button {
+
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  width: 213px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3A4562;
+  background: #3845645d;
+  border-radius: 8px;
+
+  img {
+    margin: 0 19px 0 0;
+  }
+
+  @media(max-width:1318px) {
+    margin: 20px 0 20px 40px;
+  }
+
+  @media(max-width: 1234px) {
+    margin: 20px 0 20px 300px;
+  }
+
+  @media(max-width: 714px) {
+    margin: 10px 0 10px 400px;
+  }
+
+  @media(max-width: 528px) {
+    margin: 10px 0 10px 500px;
+  }
+
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    background: #2c364e8f;
+  }
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0 20px 0;
+    background: #FFFFFF;
+    width: 515px;
+    height: 52px;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 10.4px;
+    column-gap: 20px;
+
+    @media(max-width:768px) {
+      width: 415px;
+      height: 32px;
+    }
+
+    @media(max-width:425px) {
+      width: 315px;
+    }
+
+    @media(max-width:325px) {
+      width: 215px;
+    }
+  }
+
+  &__separator {
+    color: #DEE3EF;
+    font-size: 35px;
+    margin: 0 40px;
+
+    @media(max-width:325px) {
+      overflow: hidden;
+    }
+  }
+
+  &__number {
+    text-align: center;
+    width: 30px;
+    font-weight: 700;
+    font-size: 20.8px;
+    line-height: 25px;
+    letter-spacing: 1.73333px;
+    color: #70778B;
+    padding: 15px 0 12px 0;
+    cursor: pointer;
+
+    transition: 0.1ms all ease-in-out;
+
+    &:hover {
+      color: #5876C5;
+      border-bottom: 2.6px solid #5876C5;
+    }
+
+    @media(max-width:768px) {
+      font-size: 17.8px;
+      padding: 2px 0 2px 0;
+    }
+
+    @media(max-width:425px) {
+      font-size: 15.8px;
+    }
+
+    @media(max-width:325px) {
+      font-size: 13.8px;
+    }
+  }
+
+  &__current {
+    color: #5876C5;
+    border-bottom: 2.6px solid #5876C5;
+  }
+}
