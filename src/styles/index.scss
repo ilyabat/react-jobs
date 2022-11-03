@@ -143,3 +143,14 @@ h1 {
     background: #2c364e8f;
   }
 }
+
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+
+  iframe {
+    width: 402px;
+    height: 260px;
+  }
+}
