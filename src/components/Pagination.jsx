@@ -3,7 +3,7 @@ import { getPagesArray } from '../util/pages'
 
 const Pagination = ({ totalPages, page, changePage }) => {
 
-    let pagesArray = [1, 2, 3, 4, 5]
+    let pagesArray = getPagesArray(totalPages)
 
     return (
         <div className='page'>

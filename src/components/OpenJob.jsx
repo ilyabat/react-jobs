@@ -1,15 +1,11 @@
 import React from 'react'
 import { NavLink, useParams } from 'react-router-dom';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Scrollbar, Zoom } from "swiper";
-
-
 function OpenJob({ job }) {
 
   const params = useParams();
   const jobId = params.id;
-  job = job.find(j => j.id == jobId);
+  job = job.find(j => j.id === jobId);
 
   if (job === undefined)
     return <h2>Job not found</h2>;
@@ -36,7 +32,7 @@ function OpenJob({ job }) {
                     <p className='open-job__main-brutto'>€ {job.salary}</p>
                     <p className='open-job__main-text'>Brutto, per year</p>
                   </div>
-                  <div className='open-job__main-post'>Posted 2 days ago</div>
+                  <div className='open-job__main-post'>Posted in {job.updatedAt.substr(0,4)}</div>
                 </div>
 
                 <div className='open-job__main-description'>{job.description}</div>

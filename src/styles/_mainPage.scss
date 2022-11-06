@@ -208,7 +208,11 @@
       margin-left: 114px;
       width: 16px;
       height: 18px;
-  
+      transition: all 0.2s ease-in-out;
+      &:hover{
+        transform: scale(1.2);
+      }
+
       @media(max-width:1030px) {
         display: none;
       }

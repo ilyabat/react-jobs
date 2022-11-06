@@ -2,9 +2,11 @@ import axios from "axios";
 import React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+
 import Jobs from "./components/Jobs";
 import OpenJob from "./components/OpenJob";
 import Pagination from "./components/Pagination";
+import { getPageCount } from "./util/pages";
 
 
 
@@ -21,6 +23,10 @@ function App() {
 
 
   const [jobs, setJobs] = React.useState([])
+  const [totalPages, setTotalPages] = React.useState(0)
+  const [limit, setLimit] = React.useState(10)
+  const [page, setPage] = React.useState(1)
+
 
   React.useEffect(() => {
     axios.post(
@@ -29,9 +35,16 @@ function App() {
       config
     ).then(res => {
       setJobs(res.data)
+      setTotalPages(getPageCount(20, limit))
+
     }).catch(console.log);
   }, [])
 
+  const changePage = (page) => {
+    setPage(page)
+  }
+
+ 
 
   console.log(jobs);
   return (
@@ -46,7 +59,7 @@ function App() {
                 
                     <Jobs jobs={jobs} />
 
-                    <Pagination />
+                    <Pagination page={page} changePage={changePage} totalPages={totalPages} />
   
                 </div>
               </div>

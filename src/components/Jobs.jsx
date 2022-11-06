@@ -23,11 +23,13 @@ function Jobs({ jobs }) {
                             </div>
 
                             <div className="main__block-end">
+                                
                                 <img className="main__rating" src="img/Rating.svg" alt="rating" />
-
+                                
+                                
                                 <div className="main__block-save">
                                     <img className="main__save" src="img/Save.svg" alt="save" />
-                                    <p className="main__posted">Posted 2 day ago</p>
+                                    <p className="main__posted">Posted in {items.updatedAt.substr(0,4)}</p>
                                 </div>
 
                             </div>
