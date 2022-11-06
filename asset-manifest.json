@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-jobs/static/css/main.788e1453.css",
+    "main.js": "/react-jobs/static/js/main.2b4d4bbc.js",
+    "index.html": "/react-jobs/index.html",
+    "main.788e1453.css.map": "/react-jobs/static/css/main.788e1453.css.map",
+    "main.2b4d4bbc.js.map": "/react-jobs/static/js/main.2b4d4bbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.788e1453.css",
+    "static/js/main.2b4d4bbc.js"
+  ]
+}
