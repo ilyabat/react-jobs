@@ -52,7 +52,7 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route path="/">
+          <Route path="/job">
             <Route index element={
               <div div className="main">
                 <div className="main__container _container">
