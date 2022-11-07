@@ -94,14 +94,14 @@ function OpenJob({ job }) {
                 <div className='open-job__map-email'> <b>Email: </b> {job.email}</div>
               </div>
               <div className='map-responsive'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.7258274207!2d30.392608691079264!3d50.40217023840415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2suk!4v1667485268012!5m2!1sru!2suk" allowfullscreen></iframe>
+                <iframe src = {`//maps.google.com/maps?q=${job.location.lat},${job.location.long}&z=2&amp&output=embed`}></iframe>
               </div>
-            </div>
-
           </div>
-          <NavLink to={process.env.PUBLIC_URL + "/"}> <button className='exit-button'><img src="img/Arrow.svg" alt="arrow" /> RETURN TO JOB BOARD</button></NavLink>
+
         </div>
+        <NavLink to={process.env.PUBLIC_URL + "/"}> <button className='exit-button'><img src="img/Arrow.svg" alt="arrow" /> RETURN TO JOB BOARD</button></NavLink>
       </div>
+      </div >
     );
 
 }
