@@ -32,7 +32,7 @@ function OpenJob({ job }) {
                     <p className='open-job__main-brutto'>€ {job.salary}</p>
                     <p className='open-job__main-text'>Brutto, per year</p>
                   </div>
-                  <div className='open-job__main-post'>Posted in {job.updatedAt.substr(0,4)}</div>
+                  <div className='open-job__main-post'>Posted in {job.updatedAt.substr(0, 4)}</div>
                 </div>
 
                 <div className='open-job__main-description'>{job.description}</div>
@@ -99,7 +99,7 @@ function OpenJob({ job }) {
             </div>
 
           </div>
-          <NavLink to={"/"}> <button className='exit-button'><img src="img/Arrow.svg" alt="arrow" /> RETURN TO JOB BOARD</button></NavLink>
+          <NavLink to={process.env.PUBLIC_URL + "/"}> <button className='exit-button'><img src="img/Arrow.svg" alt="arrow" /> RETURN TO JOB BOARD</button></NavLink>
         </div>
       </div>
     );

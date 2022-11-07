@@ -44,29 +44,28 @@ function App() {
     setPage(page)
   }
 
- 
+
 
   console.log(jobs);
   return (
     <div className="wrapper">
       <BrowserRouter>
         <Routes>
-
-          <Route path="/job">
+          <Route path={process.env.PUBLIC_URL + "/"}>
             <Route index element={
               <div div className="main">
                 <div className="main__container _container">
-                
-                    <Jobs jobs={jobs} />
 
-                    <Pagination page={page} changePage={changePage} totalPages={totalPages} />
-  
+                  <Jobs jobs={jobs} />
+
+                  <Pagination page={page} changePage={changePage} totalPages={totalPages} />
+
                 </div>
               </div>
             } />
-            <Route path=":id" element={<OpenJob job={jobs} />} />
-          </Route>
+            <Route path={":id"} element={<OpenJob job={jobs} />} />
 
+          </Route>
 
 
 
