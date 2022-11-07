@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-jobs/static/css/main.788e1453.css",
-    "main.js": "/react-jobs/static/js/main.9b129b10.js",
+    "main.css": "/react-jobs/static/css/main.f610817f.css",
+    "main.js": "/react-jobs/static/js/main.eb307c1b.js",
     "index.html": "/react-jobs/index.html",
-    "main.788e1453.css.map": "/react-jobs/static/css/main.788e1453.css.map",
-    "main.9b129b10.js.map": "/react-jobs/static/js/main.9b129b10.js.map"
+    "main.f610817f.css.map": "/react-jobs/static/css/main.f610817f.css.map",
+    "main.eb307c1b.js.map": "/react-jobs/static/js/main.eb307c1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.788e1453.css",
-    "static/js/main.9b129b10.js"
+    "static/css/main.f610817f.css",
+    "static/js/main.eb307c1b.js"
   ]
 }
